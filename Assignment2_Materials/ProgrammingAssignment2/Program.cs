@@ -35,9 +35,19 @@ namespace ProgrammingAssignment2
 				// comments as needed
 				int currInt;
 				currInt = GetValue();
+				int count = 0;
+				int sum = 0;
+
+				while(currInt != -1)
+				{
+					sum = (sum + currInt);
+                    currInt = GetValue();
+					count++;
+                }
+				Console.WriteLine(count);
+				Console.WriteLine(" ");
+				Console.WriteLine((float)sum/(float)count);
 				//yipee!
-
-
 				// Don't add or modify any code below
 				// this comment
 				input = Console.ReadLine();
